@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=GND Pin=-3
+Removed Pin From Net: NetName=GND Pin=-15
+Removed Pin From Net: NetName=Net_26 Pin=B-2
+Removed Pin From Net: NetName=Net_27 Pin=LED-2
+Removed Pin From Net: NetName=Net_25 Pin=Sensor-1
+Removed Pin From Net: NetName=GND Pin=Sensor-3
+Removed Pin From Net: NetName=Net_0 Pin=Sensor-4
+Added Pin To Net: NetName=Net*_16 Pin=B-1
+Added Pin To Net: NetName=Net_27 Pin=B-2
+Added Pin To Net: NetName=Net_26 Pin=LED-2
+Added Pin To Net: NetName=Net_0 Pin=Sensor-1
+Added Pin To Net: NetName=GND Pin=Sensor-2
+Added Pin To Net: NetName=Net_25 Pin=Sensor-4
+Added Member To Class: ClassName=Sheet1 Member=Component  KIT STM32F103C8T6
+Added Member To Class: ClassName=Sheet1 Member=Component  MOD MPU_6050
+Added Room: Name=Sheet1

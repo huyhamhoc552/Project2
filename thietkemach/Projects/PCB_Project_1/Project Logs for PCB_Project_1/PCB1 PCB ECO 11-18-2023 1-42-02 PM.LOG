@@ -1,0 +1,15 @@
+Change Component Designator: OldDesignator= NewDesignator=B
+Change Component Designator: OldDesignator=c NewDesignator=H2
+Change Component Designator: OldDesignator=H? NewDesignator=H1
+Change Component Designator: OldDesignator=J? NewDesignator=Sensor
+Change Component Designator: OldDesignator=L? NewDesignator=LED
+Change Net Name : Old Net Name=Netc_1 New Net Name=NetH1_2
+Change Net Name : Old Net Name=Netc_2 New Net Name=NetH1_1
+Added Pin To Net: NetName=Net_18 Pin=-18
+Added Pin To Net: NetName=Net_18 Pin=B-3
+Added Net: Name=Net_18
+Added Pin To Net: NetName=Net_26 Pin=-26
+Added Pin To Net: NetName=Net_26 Pin=B-2
+Added Net: Name=Net_26
+Added Member To Class: ClassName=Sheet1 Member=Component B Buzzer
+Added Member To Class: ClassName=Sheet1 Member=Component  MOD MPU_6050

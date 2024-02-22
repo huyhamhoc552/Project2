@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=Net_40 Pin=h-1
+Removed Pin From Net: NetName=Net_31 Pin=h-2
+Removed Pin From Net: NetName=Net_32 Pin=h-3
+Removed Pin From Net: NetName=Net_30 Pin=h-4
+Removed Pin From Net: NetName=Net_12 Pin=h-5
+Removed Pin From Net: NetName=Net_13 Pin=h-6
+Removed Pin From Net: NetName=Net_11 Pin=h-11
+Removed Pin From Net: NetName=Net_38 Pin=h-12
+Added Pin To Net: NetName=Net_11 Pin=h-3
+Added Pin To Net: NetName=Net_38 Pin=h-4
+Added Pin To Net: NetName=Net_40 Pin=h-9
+Added Pin To Net: NetName=Net_31 Pin=h-10
+Added Pin To Net: NetName=Net_32 Pin=h-11
+Added Pin To Net: NetName=Net_30 Pin=h-12
+Added Pin To Net: NetName=Net_12 Pin=h-13
+Added Pin To Net: NetName=Net_13 Pin=h-14
+Added Member To Class: ClassName=Sheet1 Member=Component  MOD MPU_6050
+Added Member To Class: ClassName=Sheet1 Member=Component  KIT STM32F103C8T6
+Added Room: Name=Sheet1

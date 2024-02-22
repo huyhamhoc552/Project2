@@ -1,0 +1,29 @@
+Removed Member From Class: ClassName=Sheet1 Member=h
+Added Component: Designator=*(DIP16 - duplicate)
+Added Pin To Net: NetName=Net*_3 Pin=-11
+Added Pin To Net: NetName=Net*_3 Pin=*-3
+Added Net: Name=Net*_3
+Added Pin To Net: NetName=Net*_4 Pin=-38
+Added Pin To Net: NetName=Net*_4 Pin=*-4
+Added Net: Name=Net*_4
+Added Pin To Net: NetName=Net*_11 Pin=-13
+Added Pin To Net: NetName=Net*_11 Pin=*-11
+Added Net: Name=Net*_11
+Added Pin To Net: NetName=Net*_12 Pin=-12
+Added Pin To Net: NetName=Net*_12 Pin=*-12
+Added Net: Name=Net*_12
+Added Pin To Net: NetName=Net*_13 Pin=-30
+Added Pin To Net: NetName=Net*_13 Pin=*-13
+Added Net: Name=Net*_13
+Added Pin To Net: NetName=Net*_14 Pin=-32
+Added Pin To Net: NetName=Net*_14 Pin=*-14
+Added Net: Name=Net*_14
+Added Pin To Net: NetName=Net*_15 Pin=-31
+Added Pin To Net: NetName=Net*_15 Pin=*-15
+Added Net: Name=Net*_15
+Added Pin To Net: NetName=Net*_16 Pin=-40
+Added Pin To Net: NetName=Net*_16 Pin=*-16
+Added Net: Name=Net*_16
+Added Member To Class: ClassName=Sheet1 Member=Component * Component_1
+Added Member To Class: ClassName=Sheet1 Member=Component  KIT STM32F103C8T6
+Added Member To Class: ClassName=Sheet1 Member=Component  MOD MPU_6050

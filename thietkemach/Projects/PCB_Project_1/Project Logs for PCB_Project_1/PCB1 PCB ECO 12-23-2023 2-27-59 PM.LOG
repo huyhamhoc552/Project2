@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=  NewDesignator=B
+Added Member To Class: ClassName=Sheet1 Member=Component Sensor MQ-2
+Added Member To Class: ClassName=Sheet1 Member=Component  Header 5P 2.54 Duc Cong
+Added Member To Class: ClassName=Sheet1 Member=Component  MOD MPU_6050
+Added Member To Class: ClassName=Sheet1 Member=Component  KIT STM32F103C8T6
+Added Room: Name=Sheet1

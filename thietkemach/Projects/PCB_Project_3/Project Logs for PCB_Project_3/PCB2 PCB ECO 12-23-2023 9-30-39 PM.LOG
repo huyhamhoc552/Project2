@@ -1,0 +1,121 @@
+Added Component: Designator=ESP?(ESP32 WROOM 32 KIT)
+Added Component: Designator=H?(VH3.96M-10)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001286"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 10P XH2.54-10P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=H?(XH2.54M-5)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001298"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 5P XH2.54-5P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=H?(XH2.54M-5)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001298"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 5P XH2.54-5P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=H?(VH3.96M-10)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001286"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 10P XH2.54-10P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Net*_3 Pin=ESP?-19
+Added Pin To Net: NetName=Net*_3 Pin=H?-7
+Added Net: Name=Net*_3
+Added Pin To Net: NetName=Net*_4 Pin=ESP?-16
+Added Pin To Net: NetName=Net*_4 Pin=H?-10
+Added Net: Name=Net*_4
+Added Pin To Net: NetName=Net*_11 Pin=ESP?-11
+Added Pin To Net: NetName=Net*_11 Pin=H?-5
+Added Net: Name=Net*_11
+Added Pin To Net: NetName=Net*_12 Pin=ESP?-23
+Added Pin To Net: NetName=Net*_12 Pin=H?-3
+Added Net: Name=Net*_12
+Added Pin To Net: NetName=Net*_13 Pin=ESP?-24
+Added Pin To Net: NetName=Net*_13 Pin=H?-2
+Added Net: Name=Net*_13
+Added Pin To Net: NetName=Net*_14 Pin=ESP?-30
+Added Pin To Net: NetName=Net*_14 Pin=H?-1
+Added Net: Name=Net*_14
+Added Pin To Net: NetName=Net*_15 Pin=ESP?-25
+Added Pin To Net: NetName=Net*_15 Pin=H?-1
+Added Net: Name=Net*_15
+Added Pin To Net: NetName=Net*_16 Pin=ESP?-17
+Added Pin To Net: NetName=Net*_16 Pin=H?-9
+Added Net: Name=Net*_16
+Added Pin To Net: NetName=NetESP?_1 Pin=ESP?-1
+Added Pin To Net: NetName=NetESP?_1 Pin=H?-5
+Added Net: Name=NetESP?_1
+Added Pin To Net: NetName=NetESP?_2 Pin=ESP?-2
+Added Pin To Net: NetName=NetESP?_2 Pin=H?-4
+Added Net: Name=NetESP?_2
+Added Pin To Net: NetName=NetESP?_3 Pin=ESP?-3
+Added Pin To Net: NetName=NetESP?_3 Pin=H?-3
+Added Net: Name=NetESP?_3
+Added Pin To Net: NetName=NetESP?_4 Pin=ESP?-4
+Added Pin To Net: NetName=NetESP?_4 Pin=H?-2
+Added Net: Name=NetESP?_4
+Added Pin To Net: NetName=NetESP?_5 Pin=ESP?-5
+Added Pin To Net: NetName=NetESP?_5 Pin=H?-1
+Added Net: Name=NetESP?_5
+Added Pin To Net: NetName=NetESP?_6 Pin=ESP?-6
+Added Pin To Net: NetName=NetESP?_6 Pin=H?-10
+Added Net: Name=NetESP?_6
+Added Pin To Net: NetName=NetESP?_7 Pin=ESP?-7
+Added Pin To Net: NetName=NetESP?_7 Pin=H?-9
+Added Net: Name=NetESP?_7
+Added Pin To Net: NetName=NetESP?_8 Pin=ESP?-8
+Added Pin To Net: NetName=NetESP?_8 Pin=H?-8
+Added Net: Name=NetESP?_8
+Added Pin To Net: NetName=NetESP?_9 Pin=ESP?-9
+Added Pin To Net: NetName=NetESP?_9 Pin=H?-7
+Added Net: Name=NetESP?_9
+Added Pin To Net: NetName=NetESP?_10 Pin=ESP?-10
+Added Pin To Net: NetName=NetESP?_10 Pin=H?-6
+Added Net: Name=NetESP?_10
+Added Pin To Net: NetName=NetESP?_12 Pin=ESP?-12
+Added Pin To Net: NetName=NetESP?_12 Pin=H?-4
+Added Net: Name=NetESP?_12
+Added Pin To Net: NetName=NetESP?_13 Pin=ESP?-13
+Added Pin To Net: NetName=NetESP?_13 Pin=H?-3
+Added Net: Name=NetESP?_13
+Added Pin To Net: NetName=NetESP?_14 Pin=ESP?-14
+Added Pin To Net: NetName=NetESP?_14 Pin=H?-2
+Added Net: Name=NetESP?_14
+Added Pin To Net: NetName=NetESP?_15 Pin=ESP?-15
+Added Pin To Net: NetName=NetESP?_15 Pin=H?-1
+Added Net: Name=NetESP?_15
+Added Pin To Net: NetName=NetESP?_18 Pin=ESP?-18
+Added Pin To Net: NetName=NetESP?_18 Pin=H?-8
+Added Net: Name=NetESP?_18
+Added Pin To Net: NetName=NetESP?_20 Pin=ESP?-20
+Added Pin To Net: NetName=NetESP?_20 Pin=H?-6
+Added Net: Name=NetESP?_20
+Added Pin To Net: NetName=NetESP?_21 Pin=ESP?-21
+Added Pin To Net: NetName=NetESP?_21 Pin=H?-5
+Added Net: Name=NetESP?_21
+Added Pin To Net: NetName=NetESP?_22 Pin=ESP?-22
+Added Pin To Net: NetName=NetESP?_22 Pin=H?-4
+Added Net: Name=NetESP?_22
+Added Pin To Net: NetName=NetESP?_26 Pin=ESP?-26
+Added Pin To Net: NetName=NetESP?_26 Pin=H?-5
+Added Net: Name=NetESP?_26
+Added Pin To Net: NetName=NetESP?_27 Pin=ESP?-27
+Added Pin To Net: NetName=NetESP?_27 Pin=H?-4
+Added Net: Name=NetESP?_27
+Added Pin To Net: NetName=NetESP?_28 Pin=ESP?-28
+Added Pin To Net: NetName=NetESP?_28 Pin=H?-3
+Added Net: Name=NetESP?_28
+Added Pin To Net: NetName=NetESP?_29 Pin=ESP?-29
+Added Pin To Net: NetName=NetESP?_29 Pin=H?-2
+Added Net: Name=NetESP?_29
+Added Class: Name=Sheet2
+Added Room: Name=Sheet2

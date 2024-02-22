@@ -1,0 +1,106 @@
+17:46:51.982 [Warn] Altium.Sch.Core.SchDataModel2: Import Sheet C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\Sheet1.SchDoc - sheet was taken from cache (objects:71) 
+17:46:52.040 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: (V3) DocumentLoading: documentFullPath: C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\Sheet1.SchDoc, projectFullPath: C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb, isDeviceSheet: False 
+17:46:52.054 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V5) Compilation requested (C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb): DCCW.DocumentLoading (delayed) 
+17:46:52.054 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: (V5) (0.014 s) DocumentLoading finished 
+17:46:52.069 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V5) (0.000 s) Plugin 'UniqueIdsRepairer' completed 
+17:46:52.069 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V5) (0.000 s) Plugin 'SheetNumberingUpdater' completed 
+17:46:52.069 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V5) (0.000 s) Plugin 'ProjectStructureChangesNotifier' completed 
+17:46:52.069 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V5) (0.000 s) Plugin 'CurrentDocumentViewUpdater' completed 
+17:46:52.069 [Info] Altium.Sch.Compilation.Compiler.ProjectCompiler: (V5) (0.002 s) Project  compilation completed 
+17:46:52.081 [Info] Altium.Sch.Core.Verification.ViolationManagerConsumer: (0.000 s) ViolationManagerConsumer (Incoming violations:9, Total violations:9, Delete existing:True) 
+17:46:52.081 [Info] Altium.Sch.Core.Verification.ProjectValidator: (V5) (0.001 s) ERC default completed 
+17:46:52.081 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V5) (0.027 s) Compilation request completed: DONE  - C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb, Compiled: True 
+17:46:52.966 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: Observer registered eUdmProjectView: '' 
+17:47:13.130 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V3) (0.004 s) Project DDM Compiled notifications end 
+17:47:13.130 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V3) Compile Notification start - eUdmNavigator, C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb 
+17:47:13.130 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V3) Compile Notification start - eUdmProjectView, C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb 
+17:47:13.147 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V3) (0.001 s) Markers for Schematic Error Objects: 4 
+17:47:13.147 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V3) (0.016 s) Compile Notifications end 
+17:47:13.147 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V5) (0.001 s) Project DDM Compiled notifications end 
+17:47:13.147 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V5) Compile Notification start - eUdmNavigator, C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb 
+17:47:13.147 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V5) Compile Notification start - eUdmProjectView, C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb 
+17:47:13.147 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V5) (0.000 s) Markers for Schematic Error Objects: 4 
+17:47:13.147 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V5) (0.000 s) Compile Notifications end 
+17:47:14.973 [Info] Altium.Sch.Compilation.Compiler.CompileNotificationsSender: (V5) CompileNotifications sending... 
+17:47:14.982 [Info] Altium.Sch.Compilation.Compiler.ProjectCompiler: (V1) (0.000 s) Project logical compilation completed 
+17:47:15.147 [Info] Altium.Sch.Compilation.Compiler.CompileNotificationsSender: (V5) CompileNotification sent. 
+17:51:27.699 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] DocumentSch.Show.Drawing: 425 ms 
+17:51:27.699 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] DocumentSch.Show: 488 ms 
+17:51:30.079 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.Selection.Select.AreaInside: 4 ms 
+17:51:30.079 [Info] Altium.Sch.DataModel.EngineObjects.BaseObjects.SelectedObjects: Selection cleared 
+17:51:30.079 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 0 ms (Full:0 ms) 
+17:51:31.890 [Info] Altium.Sch.Painter.Debug.PaintingTimeLogger: PaintingTimeLogger: MEASUREMENTS = 1, MIN = 0:00:00.1295174, MEDIAN = 0:00:00.1295174, MAX = 0:00:00.1295174 
+17:51:35.885 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.DragPart.Begin: 56 ms 
+17:51:36.583 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.DragPart.InProgress avg: 3 ms, max: 28 ms, total: 62 ms, count: 18 
+17:51:36.812 [Info] Altium.Sch.DataModel.EngineObjects.BaseObjects.SelectedObjects: Selection cleared 
+17:51:36.831 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V7) Compilation requested (C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb): Action.ProcessEnd 
+17:51:36.831 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 19 ms (Full:205 ms) 
+17:51:36.831 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.DragPart.Finishing: 249 ms 
+17:51:36.831 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V7) (0.000 s) Plugin 'UniqueIdsRepairer' completed 
+17:51:36.831 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V7) (0.000 s) Plugin 'SheetNumberingUpdater' completed 
+17:51:36.831 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V7) (0.000 s) Plugin 'ProjectStructureChangesNotifier' completed 
+17:51:36.831 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V7) (0.000 s) Plugin 'CurrentDocumentViewUpdater' completed 
+17:51:36.831 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.DragPart.General: 308 ms 
+17:51:36.831 [Info] Altium.Sch.Compilation.Compiler.ProjectCompiler: (V7) (0.000 s) Project  compilation completed 
+17:51:36.831 [Info] Altium.Sch.Core.Verification.ViolationManagerConsumer: (0.000 s) ViolationManagerConsumer (Incoming violations:9, Total violations:9, Delete existing:True) 
+17:51:36.831 [Info] Altium.Sch.Core.Verification.ProjectValidator: (V7) (0.000 s) ERC default completed 
+17:51:36.831 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V7) (0.005 s) Compilation request completed: DONE  - C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb, Compiled: True 
+17:51:36.831 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V7) (0.000 s) Project DDM Compiled notifications end 
+17:51:36.831 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V7) Compile Notification start - eUdmNavigator, C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb 
+17:51:36.831 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V7) Compile Notification start - eUdmProjectView, C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb 
+17:51:36.840 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V7) (0.000 s) Markers for Schematic Error Objects: 4 
+17:51:36.840 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V7) (0.000 s) Compile Notifications end 
+17:51:37.062 [Info] Altium.Sch.DataModel.EngineObjects.BaseObjects.SelectedObjects: Selection cleared 
+17:51:37.062 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.Selection.Deselect.All: 1 ms 
+17:51:37.062 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 0 ms (Full:0 ms) 
+17:51:37.452 [Info] Altium.Sch.DataModel.EngineObjects.BaseObjects.SelectedObjects: Selection cleared 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V8) Compilation requested (C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb): Action.ProcessEnd 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 4 ms (Full:5 ms) 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V8) (0.000 s) Plugin 'UniqueIdsRepairer' completed 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V8) (0.000 s) Plugin 'SheetNumberingUpdater' completed 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V8) (0.000 s) Plugin 'ProjectStructureChangesNotifier' completed 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V8) (0.000 s) Plugin 'CurrentDocumentViewUpdater' completed 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.ProjectCompiler: (V8) (0.000 s) Project  compilation completed 
+17:51:37.452 [Info] Altium.Sch.Core.Verification.ViolationManagerConsumer: (0.000 s) ViolationManagerConsumer (Incoming violations:9, Total violations:9, Delete existing:True) 
+17:51:37.452 [Info] Altium.Sch.Core.Verification.ProjectValidator: (V8) (0.000 s) ERC default completed 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.BackgroundCompiler: (V8) (0.003 s) Compilation request completed: DONE  - C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb, Compiled: True 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V8) (0.000 s) Project DDM Compiled notifications end 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V8) Compile Notification start - eUdmNavigator, C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V8) Compile Notification start - eUdmProjectView, C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V8) (0.000 s) Markers for Schematic Error Objects: 4 
+17:51:37.452 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: (V8) (0.000 s) Compile Notifications end 
+17:51:39.070 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.Selection.Select.AreaInside: 3 ms 
+17:51:39.070 [Info] Altium.Sch.DataModel.EngineObjects.BaseObjects.SelectedObjects: Selection cleared 
+17:51:39.070 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 0 ms (Full:0 ms) 
+17:51:40.383 [Info] Altium.Sch.DataModel.EngineObjects.BaseObjects.SelectedObjects: Selection cleared 
+17:51:40.383 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 0 ms (Full:0 ms) 
+17:51:41.892 [Info] Altium.Sch.Painter.Debug.PaintingTimeLogger: PaintingTimeLogger: MEASUREMENTS = 2, MIN = 0:00:00.0024435, MEDIAN = 0:00:00.0029514, MAX = 0:00:00.0034593 
+17:51:42.134 [Info] Altium.Sch.DataModel.EngineObjects.BaseObjects.SelectedObjects: Selection cleared 
+17:51:42.134 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.Selection.Deselect.All: 1 ms 
+17:51:42.134 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 0 ms (Full:0 ms) 
+17:51:47.039 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 0 ms (Full:0 ms) 
+17:51:48.807 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.Selection.Select.AreaInside: 3 ms 
+17:51:48.807 [Info] Altium.Sch.DataModel.EngineObjects.BaseObjects.SelectedObjects: Selection cleared 
+17:51:48.807 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 0 ms (Full:0 ms) 
+17:51:50.757 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.Selection.Select.AreaInside: 3 ms 
+17:51:50.757 [Info] Altium.Sch.DataModel.EngineObjects.BaseObjects.SelectedObjects: Selection cleared 
+17:51:50.757 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 0 ms (Full:0 ms) 
+17:53:39.366 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 0 ms (Full:0 ms) 
+17:53:42.024 [Info] Altium.Sch.DataModel.EngineObjects.BaseObjects.SelectedObjects: Selection cleared 
+17:53:42.024 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.Selection.Deselect.All: 1 ms 
+17:53:42.024 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 0 ms (Full:0 ms) 
+17:53:48.609 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.Selection.Deselect.All: 1 ms 
+17:53:48.609 [Info] Altium.Sch.DataModel.EngineObjects.BaseObjects.SelectedObjects: Selection changed (1): PARPNWGC 
+17:53:48.609 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 0 ms (Full:0 ms) 
+17:53:48.609 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.Selection.Select.Single: 7 ms 
+17:53:49.847 [Info] Altium.Sch.DataModel.EngineObjects.BaseObjects.SelectedObjects: Selection cleared 
+17:53:49.847 [Info] Altium.Sch.Core.Performance.AnalyticsUtils: [FeatureTracking] Sch.Selection.Deselect.All: 1 ms 
+17:53:49.847 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Operation took: 0 ms (Full:0 ms) 
+17:53:52.000 [Info] Altium.Sch.Painter.Debug.PaintingTimeLogger: PaintingTimeLogger: MEASUREMENTS = 2, MIN = 0:00:00.0028247, MEDIAN = 0:00:00.0045594, MAX = 0:00:00.0062941 
+18:18:38.221 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Remove Free Documents 
+18:18:38.221 [Info] Altium.Sch.Compilation.Compiler.DynamicCompilerChangesWatcher: Remove C:\Users\Public\Documents\Altium\Projects\PCB_Project_1\PCB_Project_1.PrjPcb 
+18:18:38.256 [Info] Altium.Sch.Compilation.Compiler.SuspendController: Continuous compilation suspended ([GLOBAL]): 1 
+18:18:38.670 [Info] Altium.Sch.Compilation.Compiler.SchCompilator: Observer unregistered eUdmNavigator 
+18:18:38.784 [Info] Altium.Sch.Compilation.Compiler.SuspendController: Continuous compilation resumed ([GLOBAL]): 0 
+18:18:38.979 [Info] Altium.Sch.DataModel.SchDataModel: Export Object C:\Users\test\AppData\Roaming\Altium\Altium Designer {1F240330-BAED-41F3-86A6-967ABC5AB77C}\Advsch.MMsdft (objects:38) 
+18:18:39.052 [Info] Altium.Sch.DataModel.SchDataModel: Export Object C:\Users\test\AppData\Roaming\Altium\Altium Designer {1F240330-BAED-41F3-86A6-967ABC5AB77C}\Advsch.dft (objects:38) 

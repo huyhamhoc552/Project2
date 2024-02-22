@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=Net_3 Pin=-3
+Removed Pin From Net: NetName=Net_3 Pin=-4
+Added Pin To Net: NetName=Net_3 Pin=-3
+Added Pin To Net: NetName=Net_3 Pin=-15
+Added Pin To Net: NetName=Net_4 Pin=-4
+Added Net: Name=Net_4
+Added Member To Class: ClassName=Sheet1 Member=Component  KIT STM32F103C8T6
+Added Member To Class: ClassName=Sheet1 Member=Component  MOD MPU_6050

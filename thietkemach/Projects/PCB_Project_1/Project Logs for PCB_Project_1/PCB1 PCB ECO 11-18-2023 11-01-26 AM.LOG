@@ -1,0 +1,85 @@
+Added Component: Designator=*(DIP16 - duplicate)
+Added Component: Designator=c(Header 3P DC 2.54)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001302"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 3P XH2.54-3P Ð?c Cong"; VariantName = "[No Variations]"
+Added Component: Designator=H?(Header 2P DC 2.54)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH002852"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 2P XH2.54-2P Ð?c Cong"; VariantName = "[No Variations]"
+Added Component: Designator=J?(CON4_100_S4B-XH-A_TH_RA)
+Add component (AddParameter): Name = "Alternate Part Number-1"; Value = "NA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "TH-CON"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Crimp Part Number"; Value = "ASXHSXH22K51"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "S4B-XH-A-1(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mating Part Number"; Value = "XHP-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number-1"; Value = "S4B-XH-A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier-1"; Value = "LCSC"; VariantName = "[No Variations]"
+Added Component: Designator=L?(LED-5MM-RED)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH008967"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Led 5MM Ph? Ð? (1000c)"; VariantName = "[No Variations]"
+Added Component: Designator=(STM32F103 KIT)
+Added Component: Designator=(Header 3P DC 2.54)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001302"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 3P XH2.54-3P Ð?c Cong"; VariantName = "[No Variations]"
+Added Component: Designator=(MOD MPU-6050)
+Added Pin To Net: NetName=Net*_2 Pin=*-2
+Added Pin To Net: NetName=Net*_3 Pin=*-3
+Added Pin To Net: NetName=Net*_4 Pin=*-4
+Added Pin To Net: NetName=Net*_5 Pin=*-5
+Added Pin To Net: NetName=Net*_6 Pin=*-6
+Added Pin To Net: NetName=GND Pin=*-8
+Added Pin To Net: NetName=Net*_11 Pin=*-11
+Added Pin To Net: NetName=Net*_12 Pin=*-12
+Added Pin To Net: NetName=Net_0 Pin=-0
+Added Pin To Net: NetName=GND Pin=-1
+Added Pin To Net: NetName=GND Pin=-1
+Added Pin To Net: NetName=Net_2 Pin=-2
+Added Pin To Net: NetName=Net_3 Pin=-3
+Added Pin To Net: NetName=Net*_11 Pin=-11
+Added Pin To Net: NetName=Net*_5 Pin=-12
+Added Pin To Net: NetName=Net*_6 Pin=-13
+Added Pin To Net: NetName=Net_2 Pin=-14
+Added Pin To Net: NetName=Net_3 Pin=-15
+Added Pin To Net: NetName=GND Pin=-19
+Added Pin To Net: NetName=Net_20 Pin=-20
+Added Pin To Net: NetName=Net_25 Pin=-25
+Added Pin To Net: NetName=Net_27 Pin=-27
+Added Pin To Net: NetName=Net*_4 Pin=-30
+Added Pin To Net: NetName=Net*_2 Pin=-31
+Added Pin To Net: NetName=Net*_3 Pin=-32
+Added Pin To Net: NetName=Net*_12 Pin=-38
+Added Pin To Net: NetName=Netc_1 Pin=c-1
+Added Pin To Net: NetName=Netc_2 Pin=c-2
+Added Pin To Net: NetName=Net_0 Pin=c-3
+Added Pin To Net: NetName=Netc_2 Pin=H?-1
+Added Pin To Net: NetName=Netc_1 Pin=H?-2
+Added Pin To Net: NetName=Net_0 Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-2
+Added Pin To Net: NetName=Net_25 Pin=J?-4
+Added Pin To Net: NetName=Net_20 Pin=L?-1
+Added Pin To Net: NetName=Net_27 Pin=L?-2
+Added Member To Class: ClassName=Sheet1 Member=Component * SX1278
+Added Member To Class: ClassName=Sheet1 Member=Component c Header 3P 2.54 Duc Cong
+Added Member To Class: ClassName=Sheet1 Member=Component H? Header 2P 2.54 Duc Cong
+Added Member To Class: ClassName=Sheet1 Member=Component J? MQ-2
+Added Member To Class: ClassName=Sheet1 Member=Component L? LED 5mm
+Added Member To Class: ClassName=Sheet1 Member=Component  KIT STM32F103C8T6
+Added Member To Class: ClassName=Sheet1 Member=Component  Buzzer
+Added Member To Class: ClassName=Sheet1 Member=Component  MOD MPU_6050
+Added Room: Name=Sheet1

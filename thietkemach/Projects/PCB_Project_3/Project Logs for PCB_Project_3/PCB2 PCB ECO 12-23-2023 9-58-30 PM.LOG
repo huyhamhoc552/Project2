@@ -1,0 +1,107 @@
+Added Component: Designator=*(DIP16 - duplicate)
+Added Component: Designator=ESP?(ESP32 WROOM 32 KIT)
+Added Component: Designator=H?(Header 8P DC 2.54)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH003367"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 8P XH2.54-8P Ð?c Cong"; VariantName = "[No Variations]"
+Added Component: Designator=H?(Header 7P DC 2.54)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH004118"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 7P XH2.54-7P Ð?c Cong"; VariantName = "[No Variations]"
+Added Component: Designator=H?(Header 7P DC 2.54)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH004118"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 7P XH2.54-7P Ð?c Cong"; VariantName = "[No Variations]"
+Added Component: Designator= (Header 8P DC 2.54)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH003367"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 8P XH2.54-8P Ð?c Cong"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Net*_3 Pin=*-3
+Added Pin To Net: NetName=Net*_4 Pin=*-4
+Added Pin To Net: NetName=Net*_12 Pin=*-12
+Added Pin To Net: NetName=Net*_13 Pin=*-13
+Added Pin To Net: NetName=Net*_14 Pin=*-14
+Added Pin To Net: NetName=Net*_15 Pin=*-15
+Added Pin To Net: NetName=Net*_16 Pin=*-16
+Added Pin To Net: NetName=NetESP?_1 Pin=ESP?-1
+Added Pin To Net: NetName=NetESP?_2 Pin=ESP?-2
+Added Pin To Net: NetName=NetESP?_3 Pin=ESP?-3
+Added Pin To Net: NetName=NetESP?_4 Pin=ESP?-4
+Added Pin To Net: NetName=NetESP?_5 Pin=ESP?-5
+Added Pin To Net: NetName=NetESP?_6 Pin=ESP?-6
+Added Pin To Net: NetName=NetESP?_7 Pin=ESP?-7
+Added Pin To Net: NetName=Net*_4 Pin=ESP?-16
+Added Pin To Net: NetName=Net*_16 Pin=ESP?-17
+Added Pin To Net: NetName=NetESP?_18 Pin=ESP?-18
+Added Pin To Net: NetName=Net*_3 Pin=ESP?-19
+Added Pin To Net: NetName=Net*_12 Pin=ESP?-23
+Added Pin To Net: NetName=Net*_13 Pin=ESP?-24
+Added Pin To Net: NetName=Net*_15 Pin=ESP?-25
+Added Pin To Net: NetName=NetESP?_26 Pin=ESP?-26
+Added Pin To Net: NetName=NetESP?_27 Pin=ESP?-27
+Added Pin To Net: NetName=NetESP?_28 Pin=ESP?-28
+Added Pin To Net: NetName=NetESP?_29 Pin=ESP?-29
+Added Pin To Net: NetName=Net*_14 Pin=ESP?-30
+Added Pin To Net: NetName=Net*_12 Pin=H?-1
+Added Pin To Net: NetName=Net*_14 Pin=H?-1
+Added Pin To Net: NetName=NetESP?_7 Pin=H?-1
+Added Pin To Net: NetName=NetESP?_6 Pin=H?-2
+Added Pin To Net: NetName=NetESP?_29 Pin=H?-2
+Added Pin To Net: NetName=NetESP?_5 Pin=H?-3
+Added Pin To Net: NetName=NetESP?_28 Pin=H?-3
+Added Pin To Net: NetName=NetESP?_4 Pin=H?-4
+Added Pin To Net: NetName=NetESP?_27 Pin=H?-4
+Added Pin To Net: NetName=Net*_3 Pin=H?-5
+Added Pin To Net: NetName=NetESP?_3 Pin=H?-5
+Added Pin To Net: NetName=NetESP?_26 Pin=H?-5
+Added Pin To Net: NetName=Net*_15 Pin=H?-6
+Added Pin To Net: NetName=NetESP?_2 Pin=H?-6
+Added Pin To Net: NetName=NetESP?_18 Pin=H?-6
+Added Pin To Net: NetName=Net*_13 Pin=H?-7
+Added Pin To Net: NetName=Net*_16 Pin=H?-7
+Added Pin To Net: NetName=NetESP?_1 Pin=H?-7
+Added Pin To Net: NetName=Net*_4 Pin=H?-8
+Added Pin To Net: NetName=Net _1 Pin= -1
+Added Pin To Net: NetName=Net _1 Pin=ESP?-15
+Added Net: Name=Net _1
+Added Pin To Net: NetName=Net _2 Pin= -2
+Added Pin To Net: NetName=Net _2 Pin=ESP?-14
+Added Net: Name=Net _2
+Added Pin To Net: NetName=Net _3 Pin= -3
+Added Pin To Net: NetName=Net _3 Pin=ESP?-13
+Added Net: Name=Net _3
+Added Pin To Net: NetName=Net _4 Pin= -4
+Added Pin To Net: NetName=Net _4 Pin=ESP?-12
+Added Net: Name=Net _4
+Added Pin To Net: NetName=Net _5 Pin= -5
+Added Pin To Net: NetName=Net _5 Pin=*-11
+Added Pin To Net: NetName=Net _5 Pin=ESP?-11
+Added Net: Name=Net _5
+Added Pin To Net: NetName=Net _6 Pin= -6
+Added Pin To Net: NetName=Net _6 Pin=ESP?-10
+Added Net: Name=Net _6
+Added Pin To Net: NetName=Net _7 Pin= -7
+Added Pin To Net: NetName=Net _7 Pin=ESP?-9
+Added Net: Name=Net _7
+Added Pin To Net: NetName=Net _8 Pin= -8
+Added Pin To Net: NetName=Net _8 Pin=ESP?-8
+Added Net: Name=Net _8
+Added Member To Class: ClassName=Sheet2 Member=Component * Component_1
+Added Member To Class: ClassName=Sheet2 Member=Component ESP? ESP32 DEVKIT
+Added Member To Class: ClassName=Sheet2 Member=Component H? Header 8P 2.54 Duc Cong
+Added Member To Class: ClassName=Sheet2 Member=Component H? Header 7P 2.54 Duc Cong
+Added Member To Class: ClassName=Sheet2 Member=Component H? Header 7P 2.54 Duc Cong
+Added Member To Class: ClassName=Sheet2 Member=Component   Header 8P 2.54 Duc Cong
+Added Room: Name=Sheet2
