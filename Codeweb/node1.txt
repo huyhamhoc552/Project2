@@ -1,0 +1,236 @@
+
+#include <SPI.h>
+#include <LoRa.h>
+#include <Arduino.h>
+#include <Wire.h>
+#include <MPU6050.h>
+#include <math.h>
+
+
+#define ss PB4
+#define rst PB5
+#define dio0 PB3
+#define ADC1 PA0
+#define led PC13
+MPU6050 mpu;
+
+float lsbPerG = 16384.0; 
+int value = 0;
+long timervib = 0;
+long timergas = 0;
+
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(led, OUTPUT);
+  digitalWrite(led, LOW);
+  Wire.begin();
+  mpu.initialize();
+
+  // ------- Khoi tao LoRa
+  LoRa.setPins(ss, rst, dio0);
+  if (!LoRa.begin(433E6)) {
+    Serial.println("Starting LoRa failed!");
+    while (1);
+    }
+    
+  // -------
+}
+
+void loop() {
+   int count =0;
+   if(millis() - timervib > 900) {
+     timervib = millis();
+  int16_t ax, ay, az;
+  String data="";
+  mpu.getAcceleration(&ax, &ay, &az);
+  
+  float accelerationX = ax / lsbPerG;
+  float accelerationY = ay / lsbPerG;
+  float accelerationZ = az / lsbPerG;
+  
+  float g = sqrt(accelerationX*accelerationX+accelerationY*accelerationY+(accelerationZ)*(accelerationZ))-1.02;
+  if ( abs(g) <0.001) g =0.001;
+  String vib = String(g,3);
+  if ( vib.length()==5) data = vib+ " "; else data= vib;
+  
+
+  
+  
+  String gas = String(value);
+  if ( gas.length()==2) data +=gas+ "   ";
+   if ( gas.length()==3) data +=gas+ "  ";
+    if ( gas.length()==4) data +=gas+ " ";
+     if ( gas.length()==1) data +=gas+ "    ";
+      if ( gas.length()==5) data +=gas;
+  
+  LoRa.beginPacket();
+  LoRa.print(data);
+  LoRa.endPacket();
+
+   }
+   
+  if (millis() - timergas > 5000) 
+  { timergas = millis();
+    value = 9.9*analogRead(ADC1);}
+
+ int packetSize = LoRa.parsePacket();
+ if (packetSize) {
+  String code="";
+  while (LoRa.available()) {
+       count++;
+       byte data = LoRa.read();
+       code += char(data);
+         
+                       }
+                       if (code == "1 1 0") digitalWrite(led, HIGH);
+                       if (code == "1 0 0") digitalWrite(led, LOW);
+}
+ }
+
+___________________________________________________________________________________________
+#include <SPI.h>
+#include <LoRa.h>
+#include <Arduino.h>
+#include <Wire.h>
+#include <MPU6050.h>
+#include <math.h>
+
+
+#define ss PB4
+#define rst PB5
+#define dio0 PB3
+#define ADC1 PA0
+MPU6050 mpu;
+
+float lsbPerG = 16384.0; 
+
+int potValue = 0;
+
+void setup() {
+  Serial.begin(9600);
+  Wire.begin();
+  mpu.initialize();
+LoRa.setPins(ss, rst, dio0);
+ // Serial.println("LoRa Sender");
+
+  if (!LoRa.begin(433E6)) {
+    Serial.println("Starting LoRa failed!");
+    while (1);
+  }
+}
+
+void loop() {
+   int16_t ax, ay, az;
+  mpu.getAcceleration(&ax, &ay, &az);
+  String data="";
+  // Chuyển đổi giá trị đọc sang đơn vị "g"
+  float accelerationX = ax / lsbPerG;
+  float accelerationY = ay / lsbPerG;
+  float accelerationZ = az / lsbPerG;
+  float g = sqrt(accelerationX*accelerationX+accelerationY*accelerationY+(accelerationZ)*(accelerationZ))-1.02;
+  if (g <0.001) g =0.001;
+  String vib = String(g,3);
+ // if (vib="0.000") vib="0.001";
+  if ( vib.length()==5) data = vib+ " ";
+  
+  int value = 9.9*analogRead(ADC1);
+  String gas = String(value);
+  if ( gas.length()==2) data +=gas+ "   ";
+   if ( gas.length()==3) data +=gas+ "  ";
+    if ( gas.length()==4) data +=gas+ " ";
+    if ( gas.length()==1) data +=gas+ "    ";
+    if ( gas.length()==5) data +=gas;
+  
+  LoRa.beginPacket();
+  LoRa.print(data);
+  LoRa.endPacket();
+
+   
+
+  delay(1000);
+}
+
+
+
+
+
+
+
+
+
+
+#include <SPI.h>
+#include <LoRa.h>
+#include <Arduino.h>
+#include <Wire.h>
+#include <MPU6050.h>
+#include <math.h>
+
+
+#define ss PB4
+#define rst PB5
+#define dio0 PB3
+#define ADC1 PA0
+#define led PC13
+MPU6050 mpu;
+
+float lsbPerG = 16384.0; 
+int value = 0;
+long timervib = 0;
+long timergas = 0;
+
+
+void setup() {
+  Serial.begin(9600);
+
+  Wire.begin();
+  mpu.initialize();
+
+  // ------- Khoi tao LoRa
+  LoRa.setPins(ss, rst, dio0);
+  if (!LoRa.begin(433E6)) {
+    Serial.println("Starting LoRa failed!");
+    while (1);
+    }
+  // -------
+}
+
+void loop() {
+   
+   if(millis() - timervib > 1000) {
+     timervib = millis();
+  int16_t ax, ay, az;
+  String data="";
+  mpu.getAcceleration(&ax, &ay, &az);
+  
+  float accelerationX = ax / lsbPerG;
+  float accelerationY = ay / lsbPerG;
+  float accelerationZ = az / lsbPerG;
+  
+  float g = sqrt(accelerationX*accelerationX+accelerationY*accelerationY+(accelerationZ)*(accelerationZ))-1.02;
+  if ( abs(g) <0.001) g =0.001;
+  String vib = String(g,3);
+  if ( vib.length()==5) data = vib+ " "; else data= vib;
+  
+
+  
+  
+  String gas = String(value);
+  if ( gas.length()==2) data +=gas+ "   ";
+   if ( gas.length()==3) data +=gas+ "  ";
+    if ( gas.length()==4) data +=gas+ " ";
+     if ( gas.length()==1) data +=gas+ "    ";
+      if ( gas.length()==5) data +=gas;
+  
+  LoRa.beginPacket();
+  LoRa.print(data);
+  LoRa.endPacket();
+
+   }
+   
+  if (millis() - timergas > 5000) 
+  { timergas = millis();
+    value = 9.9*analogRead(ADC1);}
+ 
+}

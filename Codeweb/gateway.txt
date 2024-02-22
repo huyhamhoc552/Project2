@@ -1,0 +1,409 @@
+
+#include <SPI.h>
+#include <Arduino.h>
+#include <WiFi.h>
+#include <Arduino_JSON.h>
+#include <LoRa.h>
+#include <HTTPClient.h>
+#define ss 5
+#define rst 14
+#define dio0 2
+
+String postData = "";
+String payload = "";
+long timer =0;
+//----------------------------------------
+const char* ssid = "MANG DAY KTX H1-307";
+const char* password = "07032022" ;
+
+
+void sendMessage(String outgoing) {
+  LoRa.beginPacket();
+  LoRa.print(outgoing);
+  LoRa.endPacket();
+}
+
+void control_LEDs() {
+  String Mon ="1 1 0";
+  String Moff ="1 0 0";
+  JSONVar myObject = JSON.parse(payload);
+Serial.println("---------------");
+  
+  if (JSON.typeof(myObject) == "undefined") {
+    Serial.println("Parsing input failed!");
+    Serial.println("---------------");
+    return;
+  }
+
+ 
+
+  if(strcmp(myObject["LED"], "ON") == 0)   {sendMessage(Mon);    Serial.println("LED ON"); }
+  if(strcmp(myObject["LED"], "OFF") == 0)  {sendMessage(Moff);   Serial.println("LED OFF");}
+  
+
+  Serial.println("---------------");
+}
+
+void setup() {
+ //________________________________________________________________ khoi tao LoRa
+pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(9600);
+LoRa.setPins(ss, rst, dio0);
+  if (!LoRa.begin(433E6)) {             
+    Serial.println("LoRa init failed. Check your connections.");
+    while (true);                     
+  }
+  Serial.println("LoRa init succeeded.");
+//________________________________________________________________________________ 
+
+WiFi.mode(WIFI_STA);
+WiFi.begin(ssid,password);
+Serial.println("conecting");
+  while(WiFi.status() != WL_CONNECTED)
+  {
+    delay(500);
+    Serial.print(".");
+  }
+   Serial.print("ket no thanh cong");
+//________________________________________________________________________________ 
+}
+
+
+
+void loop() {
+  HTTPClient http;
+  int httpCode;
+  int count =0;
+  String s2, s3, s4;
+  String LEDState ="";
+if(millis() - timer > 1000) {
+   postData = "id=esp32_01";
+    payload = "";
+    http.begin("http://192.168.0.105/test/getcommand.php");  
+    http.addHeader("Content-Type", "application/x-www-form-urlencoded");        
+   
+    httpCode = http.POST(postData); 
+    payload = http.getString();     
+  
+    
+    http.end();  //--> Close connection
+    Serial.println("---------------");
+ timer = millis();
+ control_LEDs();
+ 
+ 
+}
+String LED_State = "";
+if (digitalRead(LED_BUILTIN) == 1) LED_State = "ON";
+if (digitalRead(LED_BUILTIN) == 0) LED_State = "OFF";
+  int packetSize = LoRa.parsePacket();
+  String datavib = "";
+  String datagas = "";
+  if (packetSize) {
+    
+    Serial.print("Received packet :");
+     while (LoRa.available()) {
+       count++;
+       byte data = LoRa.read();
+       if (count < 7) 
+         datavib += char(data);
+       if (count > 6) 
+         datagas += char(data);
+                       }
+    float vib = datavib.toFloat();
+    int   gas = datagas.toInt();
+Serial.print(datavib);
+Serial.print("  ");
+Serial.println(datagas);
+ // -1.020     29
+  
+  postData = "id=esp32_01";
+  payload = "";
+  
+  
+   postData = "id=esp32_01";
+    postData += "&vib=" + datavib;
+    postData += "&gas=" + datagas;
+     postData += "&temp=" + String(count);
+      postData += "&humi=" + String(count);
+       postData += "&air=" + String(count);
+        postData += "&LED=" + LEDState;
+         postData += "&sound=" + String("OFF");
+    
+    payload = "";
+  
+    
+    Serial.println("---------------updateData.php");
+    http.begin("http://192.168.0.105/test/updatedata_and_record.php");
+    http.addHeader("Content-Type", "application/x-www-form-urlencoded");  
+    httpCode = http.POST(postData); 
+    payload = http.getString();  
+    Serial.print("httpCode : ");
+    Serial.println(httpCode); 
+    Serial.print("payload  : ");
+    Serial.println(payload);
+    http.end();  
+    Serial.println("---------------");
+     digitalWrite(LED_BUILTIN, HIGH);
+  }
+    
+
+
+  }
+
+
+
+
+
+_____________________________________________________________________________________________
+
+#include <SPI.h>
+#include <Arduino.h>
+#include <WiFi.h>
+#include <Arduino_JSON.h>
+#include <LoRa.h>
+#include <HTTPClient.h>
+#define ss 5
+#define rst 14
+#define dio0 2
+
+String postData = "";
+String payload = "";
+
+//----------------------------------------
+const char* ssid = "MANG DAY KTX H1-307";
+const char* password = "07032022" ;
+
+void setup() {
+ //________________________________________________________________ khoi tao LoRa
+pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(9600);
+LoRa.setPins(ss, rst, dio0);
+  if (!LoRa.begin(433E6)) {             
+    Serial.println("LoRa init failed. Check your connections.");
+    while (true);                     
+  }
+  Serial.println("LoRa init succeeded.");
+//________________________________________________________________________________ 
+
+WiFi.mode(WIFI_STA);
+WiFi.begin(ssid,password);
+Serial.println("conecting");
+  while(WiFi.status() != WL_CONNECTED)
+  {
+    delay(500);
+    Serial.print(".");
+  }
+   Serial.print("ket no thanh cong");
+//________________________________________________________________________________ 
+}
+
+
+
+void loop() {
+  int count =0;
+  String s2, s3, s4;
+  int packetSize = LoRa.parsePacket();
+  String datavib = "";
+  String datagas = "";
+  if (packetSize) {
+    
+    Serial.print("Received packet :");
+     while (LoRa.available()) {
+       count++;
+       byte data = LoRa.read();
+       if (count < 7) 
+         datavib += char(data);
+       if (count > 6) 
+         datagas += char(data);
+                       }
+    float vib = datavib.toFloat();
+    int   gas = datagas.toInt();
+Serial.print(datavib);
+Serial.print(" ");
+Serial.println(datagas);
+ // -1.020     29
+  HTTPClient http;
+  int httpCode;
+  postData = "id=esp32_01";
+  payload = "";
+  
+  
+   postData = "id=esp32_01";
+    postData += "&vib=" + datavib;
+    postData += "&gas=" + datagas;
+     postData += "&temp=" + String(count);
+      postData += "&humi=" + String(count);
+       postData += "&air=" + String(count);
+        postData += "&LED=" + String("OFF");
+         postData += "&sound=" + String("OFF");
+    
+    payload = "";
+  
+    
+    Serial.println("---------------updateData.php");
+    http.begin("http://192.168.0.105/test/updatedata_and_record.php");
+    http.addHeader("Content-Type", "application/x-www-form-urlencoded");  
+    httpCode = http.POST(postData); 
+    payload = http.getString();  
+    Serial.print("httpCode : ");
+    Serial.println(httpCode); 
+    Serial.print("payload  : ");
+    Serial.println(payload);
+    http.end();  
+    Serial.println("---------------");
+     digitalWrite(LED_BUILTIN, HIGH);
+  }
+    
+
+
+  }
+
+#include <SPI.h>
+#include <Arduino.h>
+#include <WiFi.h>
+#include <Arduino_JSON.h>
+#include <LoRa.h>
+#include <HTTPClient.h>
+#define ss 5
+#define rst 14
+#define dio0 2
+
+const char* ssid = "MANG DAY KTX H1-307";
+const char* password = "07032022" ;
+
+String postData = "";
+String payload = "";
+long timer =0;
+
+void sendMessage(String outgoing) {
+  LoRa.beginPacket();
+  LoRa.print(outgoing);
+  LoRa.endPacket();
+}
+
+void control_LEDs() {
+  String Mon ="1 1 0";
+  String Moff ="1 0 0";
+  JSONVar myObject = JSON.parse(payload);
+  Serial.println("---------------");
+  
+  if (JSON.typeof(myObject) == "undefined") {
+    Serial.println("Parsing input failed!");
+    Serial.println("---------------");
+    return;
+  }
+  if(strcmp(myObject["LED"], "ON") == 0)   {sendMessage(Mon);    Serial.println("LED ON"); }
+  if(strcmp(myObject["LED"], "OFF") == 0)  {sendMessage(Moff);   Serial.println("LED OFF");}
+  
+
+  Serial.println("---------------");
+}
+
+void setup() {
+ //________________________________________________________________ khoi tao LoRa
+  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(9600);
+  LoRa.setPins(ss, rst, dio0);
+  if (!LoRa.begin(433E6)) {             
+    Serial.println("LoRa init failed. Check your connections.");
+    while (true);                     
+  }
+  Serial.println("LoRa init succeeded.");
+
+
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid,password);
+  Serial.println("conecting");
+  while(WiFi.status() != WL_CONNECTED)
+  {
+    delay(500);
+    Serial.print(".");
+  }
+   Serial.print("ket no thanh cong");
+//________________________________________________________________________________ 
+}
+
+
+
+void loop() {
+  HTTPClient http;
+  int httpCode;
+  int count =0;
+  String LEDState ="";
+if(millis() - timer > 1000) {
+    postData = "id=esp32_01";
+    payload = "";
+    http.begin("http://192.168.0.105/test/getcommand.php");  
+    http.addHeader("Content-Type", "application/x-www-form-urlencoded");        
+   
+    httpCode = http.POST(postData); 
+    payload = http.getString();     
+  
+    
+    http.end();  //--> Close connection
+ Serial.println("---------------");
+ timer = millis();
+ control_LEDs();
+ 
+ 
+}
+String LED_State = "";
+String datavib = "";
+String datagas = "";
+if (digitalRead(LED_BUILTIN) == 1) LED_State = "ON";
+if (digitalRead(LED_BUILTIN) == 0) LED_State = "OFF";
+  int packetSize = LoRa.parsePacket();
+  
+  if (packetSize) {
+    
+    Serial.print("Received packet :");
+     while (LoRa.available()) {
+       count++;
+       byte data = LoRa.read();
+       if (count < 7) 
+         datavib += char(data);
+       if (count > 6) 
+         datagas += char(data);
+                       }
+    float vib = datavib.toFloat();
+    int   gas = datagas.toInt();
+Serial.print(datavib);
+Serial.print("  ");
+Serial.println(datagas);
+ // -1.020     29
+  
+  postData = "id=esp32_01";
+  payload = "";
+  
+  
+   postData = "id=esp32_01";
+    postData += "&vib=" + datavib;
+    postData += "&gas=" + datagas;
+     postData += "&temp=" + String(count);
+      postData += "&humi=" + String(count);
+       postData += "&air=" + String(count);
+        postData += "&LED=" + String("OFF");
+         postData += "&sound=" + String("OFF");
+    
+    payload = "";
+  
+    
+    Serial.println("---------------updateData.php");
+    http.begin("http://192.168.0.105/test/updatedata_and_record.php");
+    http.addHeader("Content-Type", "application/x-www-form-urlencoded");  
+    httpCode = http.POST(postData); 
+    payload = http.getString();  
+    Serial.print("httpCode : ");
+    Serial.println(httpCode); 
+    Serial.print("payload  : ");
+    Serial.println(payload);
+    http.end();  
+    Serial.println("---------------");
+     digitalWrite(LED_BUILTIN, HIGH);
+  }
+    
+
+
+  }
+
